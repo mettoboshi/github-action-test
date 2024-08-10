@@ -11,7 +11,7 @@ jobs:
         run: |
           npm install
           npx playwright install
-          docker-compose up -d
+          docker compose up -d
           npm run composer install
       - name: Run Static Test
         run: npm run test:static
